@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appCaritasMty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_caritas" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-rR-PDL">
+                                <rect key="frame" x="50" y="167" width="314" height="100"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-3S-J3A">
+                                <rect key="frame" x="0.0" y="553" width="414" height="343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-zQ-bcu">
+                                        <rect key="frame" x="22" y="26" width="370" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sem id purus luctus mollis." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-2V-EZa">
+                                        <rect key="frame" x="22" y="70" width="361" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="6l6-cm-V1g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwC-yO-ku5">
+                                        <rect key="frame" x="22" y="168" width="370" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="CPj-zm-lGb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Voluntario">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.68627450980392157" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nj-6U-cOH">
+                                        <rect key="frame" x="22" y="235" width="370" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="8yn-qI-yBb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Administrador"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FwC-yO-ku5" firstAttribute="top" secondItem="T5F-2V-EZa" secondAttribute="bottom" constant="14" id="81W-hW-8UO"/>
+                                    <constraint firstItem="FwC-yO-ku5" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="BuG-6o-x46"/>
+                                    <constraint firstItem="6nj-6U-cOH" firstAttribute="top" secondItem="FwC-yO-ku5" secondAttribute="bottom" constant="14" id="Ijl-kF-TyL"/>
+                                    <constraint firstItem="T5F-2V-EZa" firstAttribute="leading" secondItem="kCu-zQ-bcu" secondAttribute="leading" id="JKn-2Q-bwZ"/>
+                                    <constraint firstAttribute="height" constant="343" id="KNi-nZ-JXy"/>
+                                    <constraint firstItem="kCu-zQ-bcu" firstAttribute="top" secondItem="D5a-3S-J3A" secondAttribute="top" constant="26" id="Pyn-kq-dqz"/>
+                                    <constraint firstAttribute="trailing" secondItem="6nj-6U-cOH" secondAttribute="trailing" constant="22" id="U91-eh-udO"/>
+                                    <constraint firstAttribute="trailing" secondItem="T5F-2V-EZa" secondAttribute="trailing" constant="31" id="V3z-u5-4KS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FwC-yO-ku5" secondAttribute="trailing" constant="22" id="VAA-FZ-Kvk"/>
+                                    <constraint firstAttribute="trailing" secondItem="kCu-zQ-bcu" secondAttribute="trailing" constant="22" id="Yfk-bF-kzw"/>
+                                    <constraint firstItem="6nj-6U-cOH" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="a34-i7-sM3"/>
+                                    <constraint firstItem="kCu-zQ-bcu" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="aOn-mB-FNb"/>
+                                    <constraint firstItem="T5F-2V-EZa" firstAttribute="top" secondItem="kCu-zQ-bcu" secondAttribute="bottom" constant="8" symbolic="YES" id="idb-WJ-Ia5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.61176470588235299" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="D5a-3S-J3A" secondAttribute="bottom" id="60m-8X-Vk2"/>
+                            <constraint firstItem="D5a-3S-J3A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E89-sz-Mo3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KpE-rR-PDL" secondAttribute="trailing" constant="50" id="Gdf-rY-M4W"/>
+                            <constraint firstItem="KpE-rR-PDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Ilo-cs-ONm"/>
+                            <constraint firstItem="KpE-rR-PDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Xsy-k5-5KV"/>
+                            <constraint firstItem="D5a-3S-J3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eA6-In-KVF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewInfo" destination="D5a-3S-J3A" id="xsz-Ta-Hff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="26.399999999999999" y="52.623688155922046"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_caritas" width="206" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
