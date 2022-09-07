@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */; };
 		1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E806428C795D300C195F7 /* AppDelegate.swift */; };
 		1A6E806728C795D300C195F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E806628C795D300C195F7 /* SceneDelegate.swift */; };
 		1A6E806928C795D300C195F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E806828C795D300C195F7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoluntarioIngresoViewController.swift; sourceTree = "<group>"; };
 		1A6E806128C795D300C195F7 /* appCaritasMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCaritasMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6E806428C795D300C195F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6E806628C795D300C195F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A026C5828C8E46900632C31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E806828C795D300C195F7 /* ViewController.swift */,
+				1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1A6E805828C795D300C195F7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		1A6E806328C795D300C195F7 /* appCaritasMty */ = {
 			isa = PBXGroup;
 			children = (
+				1A026C5828C8E46900632C31 /* Views */,
 				1A6E806428C795D300C195F7 /* AppDelegate.swift */,
 				1A6E806628C795D300C195F7 /* SceneDelegate.swift */,
-				1A6E806828C795D300C195F7 /* ViewController.swift */,
 				1A6E806A28C795D300C195F7 /* Main.storyboard */,
 				1A6E806D28C795D900C195F7 /* Assets.xcassets */,
 				1A6E806F28C795D900C195F7 /* LaunchScreen.storyboard */,
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6E806928C795D300C195F7 /* ViewController.swift in Sources */,
+				1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */,
 				1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */,
 				1A6E806728C795D300C195F7 /* SceneDelegate.swift in Sources */,
 			);
