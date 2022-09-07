@@ -20,16 +20,16 @@
                                 <rect key="frame" x="50" y="167" width="314" height="100"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-3S-J3A">
-                                <rect key="frame" x="0.0" y="553" width="414" height="343"/>
+                                <rect key="frame" x="0.0" y="526" width="414" height="370"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-zQ-bcu">
-                                        <rect key="frame" x="22" y="26" width="370" height="36"/>
+                                        <rect key="frame" x="22" y="50" width="370" height="36"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sem id purus luctus mollis." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-2V-EZa">
-                                        <rect key="frame" x="22" y="70" width="361" height="84"/>
+                                        <rect key="frame" x="22" y="94" width="361" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="6l6-cm-V1g"/>
                                         </constraints>
@@ -38,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwC-yO-ku5">
-                                        <rect key="frame" x="22" y="168" width="370" height="53"/>
+                                        <rect key="frame" x="22" y="192" width="370" height="53"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="CPj-zm-lGb"/>
@@ -50,12 +50,17 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nj-6U-cOH">
-                                        <rect key="frame" x="22" y="235" width="370" height="53"/>
+                                        <rect key="frame" x="22" y="259" width="370" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="8yn-qI-yBb"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Administrador"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Administrador">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,8 +69,7 @@
                                     <constraint firstItem="FwC-yO-ku5" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="BuG-6o-x46"/>
                                     <constraint firstItem="6nj-6U-cOH" firstAttribute="top" secondItem="FwC-yO-ku5" secondAttribute="bottom" constant="14" id="Ijl-kF-TyL"/>
                                     <constraint firstItem="T5F-2V-EZa" firstAttribute="leading" secondItem="kCu-zQ-bcu" secondAttribute="leading" id="JKn-2Q-bwZ"/>
-                                    <constraint firstAttribute="height" constant="343" id="KNi-nZ-JXy"/>
-                                    <constraint firstItem="kCu-zQ-bcu" firstAttribute="top" secondItem="D5a-3S-J3A" secondAttribute="top" constant="26" id="Pyn-kq-dqz"/>
+                                    <constraint firstItem="kCu-zQ-bcu" firstAttribute="top" secondItem="D5a-3S-J3A" secondAttribute="top" constant="50" id="Pyn-kq-dqz"/>
                                     <constraint firstAttribute="trailing" secondItem="6nj-6U-cOH" secondAttribute="trailing" constant="22" id="U91-eh-udO"/>
                                     <constraint firstAttribute="trailing" secondItem="T5F-2V-EZa" secondAttribute="trailing" constant="31" id="V3z-u5-4KS"/>
                                     <constraint firstAttribute="trailing" secondItem="FwC-yO-ku5" secondAttribute="trailing" constant="22" id="VAA-FZ-Kvk"/>
@@ -73,6 +77,7 @@
                                     <constraint firstItem="6nj-6U-cOH" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="a34-i7-sM3"/>
                                     <constraint firstItem="kCu-zQ-bcu" firstAttribute="leading" secondItem="D5a-3S-J3A" secondAttribute="leading" constant="22" id="aOn-mB-FNb"/>
                                     <constraint firstItem="T5F-2V-EZa" firstAttribute="top" secondItem="kCu-zQ-bcu" secondAttribute="bottom" constant="8" symbolic="YES" id="idb-WJ-Ia5"/>
+                                    <constraint firstAttribute="height" constant="370" id="mDQ-SB-Jdt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -88,6 +93,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnAdmin" destination="6nj-6U-cOH" id="w5B-da-YcU"/>
                         <outlet property="viewInfo" destination="D5a-3S-J3A" id="xsz-Ta-Hff"/>
                     </connections>
                 </viewController>
