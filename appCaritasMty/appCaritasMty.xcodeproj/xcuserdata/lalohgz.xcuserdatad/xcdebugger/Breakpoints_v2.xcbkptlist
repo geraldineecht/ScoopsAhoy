@@ -20,5 +20,113 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "VoluntarioIngresoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - 1fe793d44819a513"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.btnLogIn.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - 188576a7f597f527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.btnLogIn.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - 8ba67d8a92710910"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.btnLogIn.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - baa454f27430f08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.btnLogIn.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - 41ebe62663cfe58f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; appCaritasMty.VoluntarioIngresoViewController"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5F0E8577-9A41-4A2A-91F9-5FE94C8608E8 - 8662a4f5d02b7780"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appCaritasMty.VoluntarioIngresoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;appCaritasMty.VoluntarioIngresoViewController&gt;"
+                  moduleName = "appCaritasMty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lalohgz/Documents/IOS-App/ScoopsAhoy/appCaritasMty/appCaritasMty/Views/VoluntarioIngresoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

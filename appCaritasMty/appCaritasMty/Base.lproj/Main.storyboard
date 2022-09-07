@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZV2-a7-gOl">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,36 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appCaritasMty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_caritas" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-rR-PDL">
-                                <rect key="frame" x="50" y="167" width="328" height="100"/>
+                                <rect key="frame" x="-1768" y="172" width="3926" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2uh-uI-mBI"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-3S-J3A">
-                                <rect key="frame" x="0.0" y="556" width="428" height="370"/>
+                                <rect key="frame" x="0.0" y="474" width="390" height="370"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-zQ-bcu">
-                                        <rect key="frame" x="22" y="50" width="384" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cáritas de Monterrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-zQ-bcu">
+                                        <rect key="frame" x="22" y="50" width="346" height="36"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sem id purus luctus mollis." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-2V-EZa">
-                                        <rect key="frame" x="22" y="94" width="375" height="84"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-2V-EZa">
+                                        <rect key="frame" x="22" y="94" width="337" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="6l6-cm-V1g"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <string key="text">Cáritas de Monterrey, A.B.P. es un organismo de la Iglesia Católica fundamentado en el amor que proporciona servicios asistenciales, de promoción humana y desarrollo comunitario.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwC-yO-ku5">
-                                        <rect key="frame" x="22" y="192" width="384" height="53"/>
+                                        <rect key="frame" x="22" y="192" width="346" height="53"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="CPj-zm-lGb"/>
@@ -51,9 +52,12 @@
                                             <color key="baseForegroundColor" red="0.14962121212121215" green="0.14962121212121215" blue="0.14962121212121215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" red="1" green="0.68531954927301053" blue="0.50298855468091863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="iwG-PD-mif" kind="show" id="WFU-aj-PU5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nj-6U-cOH">
-                                        <rect key="frame" x="22" y="259" width="384" height="53"/>
+                                        <rect key="frame" x="22" y="259" width="346" height="53"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="8yn-qI-yBb"/>
@@ -87,14 +91,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.61176470588235299" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KpE-rR-PDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="51m-fg-JWl"/>
                             <constraint firstAttribute="bottom" secondItem="D5a-3S-J3A" secondAttribute="bottom" id="60m-8X-Vk2"/>
                             <constraint firstItem="D5a-3S-J3A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E89-sz-Mo3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KpE-rR-PDL" secondAttribute="trailing" constant="50" id="Gdf-rY-M4W"/>
-                            <constraint firstItem="KpE-rR-PDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Ilo-cs-ONm"/>
-                            <constraint firstItem="KpE-rR-PDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Xsy-k5-5KV"/>
                             <constraint firstItem="D5a-3S-J3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eA6-In-KVF"/>
+                            <constraint firstItem="KpE-rR-PDL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="oAf-X9-xcs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Xi0-jq-w7L"/>
                     <connections>
                         <outlet property="btnAdmin" destination="6nj-6U-cOH" id="w5B-da-YcU"/>
                         <outlet property="viewInfo" destination="D5a-3S-J3A" id="xsz-Ta-Hff"/>
@@ -102,27 +106,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26.399999999999999" y="52.623688155922046"/>
+            <point key="canvasLocation" x="955.38461538461536" y="52.606635071090047"/>
         </scene>
         <!--Voluntario Ingreso View Controller-->
         <scene sceneID="u6T-aE-U9B">
             <objects>
                 <viewController id="iwG-PD-mif" customClass="VoluntarioIngresoViewController" customModule="appCaritasMty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R0f-cO-HpX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-Tn-rgM" userLabel="Menu Components">
-                                <rect key="frame" x="0.0" y="556" width="428" height="370"/>
+                                <rect key="frame" x="0.0" y="474" width="390" height="370"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voluntario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gov-Cm-ocv">
-                                        <rect key="frame" x="22" y="50" width="384" height="36"/>
+                                        <rect key="frame" x="22" y="50" width="346" height="36"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta sem id purus luctus mollis." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfD-H5-fC3">
-                                        <rect key="frame" x="22" y="94" width="384" height="84"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si estas interesado en ser voluntario registrate!, si ya estás registrado como voluntario en la aplicación ingresa a tu cuenta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfD-H5-fC3">
+                                        <rect key="frame" x="22" y="94" width="346" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="8MF-N2-dNp"/>
                                         </constraints>
@@ -131,7 +135,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLz-Oc-v8K">
-                                        <rect key="frame" x="22" y="192" width="384" height="53"/>
+                                        <rect key="frame" x="22" y="192" width="346" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="Unx-Ol-JPs"/>
                                         </constraints>
@@ -145,7 +149,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRd-i3-Agu">
-                                        <rect key="frame" x="22" y="259" width="384" height="53"/>
+                                        <rect key="frame" x="22" y="259" width="346" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="UHA-eZ-HSh"/>
                                         </constraints>
@@ -173,15 +177,24 @@
                                     <constraint firstItem="oLz-Oc-v8K" firstAttribute="leading" secondItem="xKV-Tn-rgM" secondAttribute="leading" constant="22" id="zWh-Mu-ZOa"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_caritas" translatesAutoresizingMaskIntoConstraints="NO" id="qgc-U4-CsJ">
+                                <rect key="frame" x="-1768" y="172" width="3926" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Grv-Uw-C1g"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ou-Jk-w34"/>
                         <color key="backgroundColor" red="0.270588249" green="0.60392159219999997" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="xKV-Tn-rgM" firstAttribute="leading" secondItem="0ou-Jk-w34" secondAttribute="leading" id="8uO-QE-tBF"/>
                             <constraint firstAttribute="bottom" secondItem="xKV-Tn-rgM" secondAttribute="bottom" id="Odu-ch-vNw"/>
+                            <constraint firstItem="qgc-U4-CsJ" firstAttribute="centerY" secondItem="R0f-cO-HpX" secondAttribute="centerY" constant="-200" id="doC-wS-qNV"/>
+                            <constraint firstItem="qgc-U4-CsJ" firstAttribute="centerX" secondItem="R0f-cO-HpX" secondAttribute="centerX" id="nbM-h6-QyI"/>
                             <constraint firstItem="xKV-Tn-rgM" firstAttribute="trailing" secondItem="0ou-Jk-w34" secondAttribute="trailing" id="tsD-bX-f32"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uzG-lC-AID"/>
                     <connections>
                         <outlet property="MenuVolunteer" destination="xKV-Tn-rgM" id="0ud-zx-mp5"/>
                         <outlet property="btnLogIn" destination="oLz-Oc-v8K" id="XSO-se-fJG"/>
@@ -190,9 +203,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfi-qx-6vw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753.62318840579712" y="51.5625"/>
+            <point key="canvasLocation" x="1681.5384615384614" y="51.18483412322275"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GkV-dp-5F9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZV2-a7-gOl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dwn-kf-aKn">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zes-UF-FIc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyq-hV-0XD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.153846153846153" y="52.606635071090047"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="logo_caritas" width="3926" height="2101"/>
         <systemColor name="labelColor">
