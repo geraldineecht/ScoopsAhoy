@@ -338,10 +338,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5g-In-PlE">
-                                <rect key="frame" x="22" y="183" width="346" height="395"/>
+                                <rect key="frame" x="22" y="183" width="346" height="263"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-ic-TOO">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="85"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-ic-TOO">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="81"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-QH-uag">
                                                 <rect key="frame" x="0.0" y="0.0" width="346" height="21"/>
@@ -359,7 +359,6 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstItem="RhQ-QH-uag" firstAttribute="leading" secondItem="dbs-ic-TOO" secondAttribute="leading" id="7x6-qi-fQ4"/>
                                             <constraint firstAttribute="trailing" secondItem="RhQ-QH-uag" secondAttribute="trailing" id="JLW-iE-amY"/>
@@ -369,8 +368,8 @@
                                             <constraint firstAttribute="trailing" secondItem="tJH-gL-NqY" secondAttribute="trailing" id="sa8-eH-eKE"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abt-an-66b">
-                                        <rect key="frame" x="0.0" y="101" width="346" height="84"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abt-an-66b">
+                                        <rect key="frame" x="0.0" y="101" width="346" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vy-NW-AfF">
                                                 <rect key="frame" x="0.0" y="0.0" width="346" height="20"/>
@@ -388,7 +387,6 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="vqO-PI-I3T" secondAttribute="trailing" id="7oX-W3-tsq"/>
                                             <constraint firstItem="vqO-PI-I3T" firstAttribute="top" secondItem="7vy-NW-AfF" secondAttribute="bottom" constant="4" id="T8R-IT-gs8"/>
@@ -407,10 +405,12 @@
                                                     <constraint firstAttribute="height" constant="60" id="ISg-lx-bL9"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Ingresar">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="baseBackgroundColor" red="0.9529411793" green="0.69803923369999998" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <constraints>
                                             <constraint firstItem="LtS-zk-zuc" firstAttribute="leading" secondItem="UGx-3H-YsH" secondAttribute="leading" id="NV2-vH-GO1"/>
                                             <constraint firstAttribute="trailing" secondItem="LtS-zk-zuc" secondAttribute="trailing" id="mbI-ua-xp3"/>
@@ -420,6 +420,8 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="abt-an-66b" firstAttribute="top" secondItem="I5g-In-PlE" secondAttribute="top" constant="101" id="2d3-ol-rJq"/>
+                                    <constraint firstItem="UGx-3H-YsH" firstAttribute="top" secondItem="I5g-In-PlE" secondAttribute="top" constant="203" id="2dQ-A0-VG9"/>
                                     <constraint firstItem="UGx-3H-YsH" firstAttribute="top" secondItem="abt-an-66b" secondAttribute="bottom" constant="20" id="Cee-wO-9Kn"/>
                                     <constraint firstAttribute="trailing" secondItem="abt-an-66b" secondAttribute="trailing" id="WC7-TY-M6G"/>
                                     <constraint firstItem="dbs-ic-TOO" firstAttribute="leading" secondItem="I5g-In-PlE" secondAttribute="leading" id="aCL-rx-fEH"/>
@@ -441,6 +443,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dKE-8m-sEp"/>
+                    <connections>
+                        <outlet property="tfEmail" destination="tJH-gL-NqY" id="rAn-vO-cQk"/>
+                        <outlet property="tfPassword" destination="vqO-PI-I3T" id="KYi-Pb-aI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLG-cC-BTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -474,15 +480,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
