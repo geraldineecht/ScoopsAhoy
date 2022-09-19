@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */; };
+		1A02468A28D8B3D70045B54B /* LogInAdministradorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A02468928D8B3D70045B54B /* LogInAdministradorViewController.swift */; };
 		1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */; };
 		1A2B972828C9665C00470ABF /* RegistroVoluntarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */; };
 		1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E806428C795D300C195F7 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVoluntarioViewController.swift; sourceTree = "<group>"; };
+		1A02468928D8B3D70045B54B /* LogInAdministradorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInAdministradorViewController.swift; sourceTree = "<group>"; };
 		1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoluntarioIngresoViewController.swift; sourceTree = "<group>"; };
 		1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroVoluntarioViewController.swift; sourceTree = "<group>"; };
 		1A6E806128C795D300C195F7 /* appCaritasMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCaritasMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,7 @@
 				1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */,
 				1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */,
 				1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */,
+				1A02468928D8B3D70045B54B /* LogInAdministradorViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */,
 				1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */,
 				1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */,
+				1A02468A28D8B3D70045B54B /* LogInAdministradorViewController.swift in Sources */,
 				1A6E806728C795D300C195F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
