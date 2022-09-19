@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */; };
 		1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */; };
 		1A2B972828C9665C00470ABF /* RegistroVoluntarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */; };
 		1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E806428C795D300C195F7 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVoluntarioViewController.swift; sourceTree = "<group>"; };
 		1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoluntarioIngresoViewController.swift; sourceTree = "<group>"; };
 		1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroVoluntarioViewController.swift; sourceTree = "<group>"; };
 		1A6E806128C795D300C195F7 /* appCaritasMty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCaritasMty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 				1A6E806828C795D300C195F7 /* ViewController.swift */,
 				1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */,
 				1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */,
+				1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				1A6E806928C795D300C195F7 /* ViewController.swift in Sources */,
 				1A2B972828C9665C00470ABF /* RegistroVoluntarioViewController.swift in Sources */,
 				1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */,
+				1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */,
 				1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */,
 				1A6E806728C795D300C195F7 /* SceneDelegate.swift in Sources */,
 			);
