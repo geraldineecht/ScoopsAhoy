@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CryptoKit
 
 class RegistroVoluntarioViewController: UIViewController {
 
@@ -47,10 +48,15 @@ class RegistroVoluntarioViewController: UIViewController {
         etPassword.setLeftPaddingPoints(10)
         etPassword.setRightPaddingPoints(10)
         
+        //print(hashing(password: t))
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnRegister(_ sender: UIButton) {
+        let pass = hashing(password: etPassword.text!)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -62,6 +68,15 @@ class RegistroVoluntarioViewController: UIViewController {
     */
 
 }
+
+
+func hashing(password : String) -> String{
+        let inputdata = Data(password.utf8)
+        let hashed = SHA512.hash(data: inputdata)
+        let hashPassword = hashed.compactMap { String(format: "%02x", $0) }.joined()
+        return (hashPassword)
+}
+
 
 
 extension UITextField {

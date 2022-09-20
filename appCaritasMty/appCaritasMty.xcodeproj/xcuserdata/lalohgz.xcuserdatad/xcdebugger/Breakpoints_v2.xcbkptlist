@@ -138,10 +138,10 @@
             filePath = "appCaritasMty/Views/RegistroVoluntarioViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "RegistroVoluntarioViewController"
-            landmarkType = "3">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "etPassword"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "913A1E30-4690-4C4B-AE80-B023D17B6C05 - e5f25995cbec9dc7"
@@ -246,8 +246,8 @@
             filePath = "appCaritasMty/Views/RegistroVoluntarioViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "RegistroVoluntarioViewController"
             landmarkType = "3">
             <Locations>

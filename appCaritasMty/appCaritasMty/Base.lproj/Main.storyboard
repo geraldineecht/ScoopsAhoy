@@ -376,6 +376,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnLogIn:" destination="iwG-PD-mif" eventType="touchUpInside" id="UpM-9O-lhw"/>
+                                    <action selector="btnRegister:" destination="ndi-0O-1KO" eventType="touchUpInside" id="2VD-U8-1Jg"/>
                                 </connections>
                             </button>
                         </subviews>
