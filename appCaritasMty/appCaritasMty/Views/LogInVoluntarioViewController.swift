@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CryptoKit
 
 class LogInVoluntarioViewController: UIViewController {
     
@@ -31,6 +32,65 @@ class LogInVoluntarioViewController: UIViewController {
         tfPassword.setRightPaddingPoints(10)
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func login(_ sender: UIButton) {
+        callAPI()
+    }
+    
+
+    func hashing(password : String) -> String{
+            let inputdata = Data(password.utf8)
+            let hashed = SHA512.hash(data: inputdata)
+            let hashPassword = hashed.compactMap { String(format: "%02x", $0) }.joined()
+            return (hashPassword)
+    }
+    
+    func callAPI(){
+        var searchEmail = "dummy"
+        var searchPassword = "dummy"
+        
+        if (tfEmail != nil && tfPassword.text != ""){
+            searchEmail = tfEmail.text!
+            searchPassword = hashing(password:  tfPassword.text!)
+        }
+        
+        guard let url = URL(string: "https://equipo02.tc2007b.tec.mx:10210/vol?correo=\(searchEmail)&contrasenia=\(searchPassword)") else{
+                return
+            }
+        
+            let group = DispatchGroup()
+            group.enter()
+        
+            let task = URLSession.shared.dataTask(with: url){
+                data, response, error in
+                
+                
+                let decoder = JSONDecoder()
+                        if let data = data{
+                            do{
+                                let tasks = try decoder.decode([Voluntario].self, from: data)
+                                if (!tasks.isEmpty){
+                                    tasks.forEach{ i in
+                                        print("-------- Voluntario ---------")
+                                        print("Correo: \(i.correo)" )
+                                        print("Contraseña: \(i.Contrasenia)" )
+                                        // Agregar segue a la vista de voluntario
+                                    }
+                                }else{
+                                    // Ventana emergente usuario inválido
+                                    print("----- USUARIO NO ENCONTRADO -----")
+                                }
+                            }catch{
+                                print(error)
+                            }
+                        }
+                group.leave()
+            }
+
+            task.resume()
+        
+        group.wait()
     }
 
 }
