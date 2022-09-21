@@ -54,7 +54,7 @@ class RegistroVoluntarioViewController: UIViewController {
     }
     
     @IBAction func btnRegister(_ sender: UIButton) {
-        let pass = hashing(password: etPassword.text!)
+        callAPI()
     }
     
     /*
@@ -66,15 +66,51 @@ class RegistroVoluntarioViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
-
-
-func hashing(password : String) -> String{
-        let inputdata = Data(password.utf8)
-        let hashed = SHA512.hash(data: inputdata)
-        let hashPassword = hashed.compactMap { String(format: "%02x", $0) }.joined()
-        return (hashPassword)
+    
+    func hashing(password : String) -> String{
+            let inputdata = Data(password.utf8)
+            let hashed = SHA512.hash(data: inputdata)
+            let hashPassword = hashed.compactMap { String(format: "%02x", $0) }.joined()
+            return (hashPassword)
+    }
+    
+    func callAPI(){
+        let email = etEmail.text
+        let nombre = etName.text
+        let apellido = etSecName.text
+        let pass = hashing(password: etPassword.text!)
+        
+        guard let url = URL(string: "https://equipo02.tc2007b.tec.mx:10210/vol/registro") else{
+                return
+            }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let parameters: [String: AnyHashable] = [
+            "Nombre": nombre,
+            "Apellido": apellido,
+            "Correo": email,
+            "Contrasenia": pass
+        ]
+        
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: .fragmentsAllowed)
+        
+        
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else{
+                return
+            }
+            do {
+let response =  try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                print("No murio:  \(response)")
+            }
+            catch{
+                print(error)
+            }
+        }
+        task.resume()
+    }
 }
 
 
@@ -91,3 +127,4 @@ extension UITextField {
         self.rightViewMode = .always
     }
 }
+
