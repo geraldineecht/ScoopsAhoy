@@ -14,8 +14,11 @@ class RegistroVoluntarioViewController: UIViewController {
     @IBOutlet weak var etPassword: UITextField!
     @IBOutlet weak var etName: UITextField!
     @IBOutlet weak var etSecName: UITextField!
-    
-    
+    @IBOutlet weak var lbEmailError: UILabel!
+    @IBOutlet weak var lbPasswordError: UILabel!
+    @IBOutlet weak var btnRegistrarse: UIButton!
+    @IBOutlet weak var lbNameRequired: UILabel!
+    @IBOutlet weak var lbLastNameRequired: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,13 +51,118 @@ class RegistroVoluntarioViewController: UIViewController {
         etPassword.setLeftPaddingPoints(10)
         etPassword.setRightPaddingPoints(10)
         
-        //print(hashing(password: t))
+        resetForm()
         
         // Do any additional setup after loading the view.
     }
     
+    func resetForm(){
+        btnRegistrarse.isEnabled = false
+        
+        lbEmailError.isHidden = false
+        lbPasswordError.isHidden = false
+        
+        lbEmailError.text = ""
+        lbPasswordError.text = ""
+        lbNameRequired.text = ""
+        lbLastNameRequired.text = ""
+        
+        etEmail.text = ""
+        etPassword.text = ""
+    }
+    
+    @IBAction func emailChanged(_ sender: Any) {
+        if let email = etEmail.text{
+            if let errorMessage = invalidEmail(email){
+                etEmail.layer.borderColor = UIColor(red:255/255, green: 59/255,blue: 48/255, alpha: 1).cgColor
+                lbEmailError.text = errorMessage
+                lbEmailError.isHidden = false
+            }
+            else {
+                etEmail.layer.borderColor = UIColor(rgb: 0x0099A9).cgColor
+                lbEmailError.isHidden = true
+            }
+        }
+        checkForValidForm()
+    }
+    
+    func invalidEmail(_ email: String) -> String?{
+        let firstpart = "[A-Z0-9a-z]([A-Z0-9a-z._%+-]{0,30}[A-Z0-9a-z])?"
+        let serverpart = "([A-Z0-9a-z]([A-Z0-9a-z-]{0,30}[A-Z0-9a-z])?\\.){1,5}"
+        let emailRegex = firstpart + "@" + serverpart + "[A-Za-z]{2,8}"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+        if predicate.evaluate(with: email) == false{
+            return "Correo inválido. Por favor, ingresa un correo válido."
+        }
+        return nil
+    }
+    
+    @IBAction func passwordChanged(_ sender: Any) {
+        if let password = etPassword.text{
+            if let errorMessage = invalidPassword(password){
+                etPassword.layer.borderColor = UIColor(red:255/255, green: 59/255,blue: 48/255, alpha: 1).cgColor
+                lbPasswordError.text = errorMessage
+                lbPasswordError.isHidden = false
+            }
+            else {
+                etPassword.layer.borderColor = UIColor(rgb: 0x0099A9).cgColor
+                lbPasswordError.isHidden = true
+            }
+        }
+        checkForValidForm()
+    }
+    
+    func invalidPassword(_ password: String) -> String?{
+        if password.count < 8{
+            return "La longitud mínima es de 8 caracteres."
+        }
+        if containsDigit(password){
+            return nil
+        }
+        return nil
+    }
+    
+    func containsDigit(_ value: String) -> Bool{
+        let Regex = ".*[0-9]+.*"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", Regex)
+        return !predicate.evaluate(with: value)
+    }
+    
+    func containsLetters(_ value: String) -> Bool{
+        let Regex = ".*[a-z]+.*"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", Regex)
+        return !predicate.evaluate(with: value)
+    }
+
+    func checkForValidForm(){
+        if lbEmailError.isHidden && lbPasswordError.isHidden && lbNameRequired.isHidden && lbLastNameRequired.isHidden{
+            btnRegistrarse.isEnabled = true
+        }
+        else{
+            btnRegistrarse.isEnabled = false
+        }
+    }
+    
+    @IBAction func nameChanged(_ sender: Any) {
+        if let name = etName.text{
+            if containsDigit(name){
+                lbNameRequired.isHidden = true
+            }
+        }
+        checkForValidForm()
+    }
+    
+    @IBAction func lastNameChanged(_ sender: Any) {
+        if let lastName = etSecName.text{
+            if containsDigit(lastName){
+                lbLastNameRequired.isHidden = true
+            }
+        }
+        checkForValidForm()
+    }
+    
     @IBAction func btnRegister(_ sender: UIButton) {
-        callAPI()
+        API()
     }
     
     /*
@@ -74,7 +182,7 @@ class RegistroVoluntarioViewController: UIViewController {
             return (hashPassword)
     }
     
-    func callAPI(){
+    func API(){
         let email = etEmail.text
         let nombre = etName.text
         let apellido = etSecName.text
