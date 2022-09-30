@@ -10,6 +10,8 @@ import Foundation
 struct Voluntario:Codable{
     let Contrasenia: String
     let correo: String
+    let idVol: Int
+    let nombre: String
 }
 
 struct Administrador:Codable{

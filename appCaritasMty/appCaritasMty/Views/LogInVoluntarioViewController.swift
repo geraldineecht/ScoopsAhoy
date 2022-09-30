@@ -110,6 +110,11 @@ class LogInVoluntarioViewController: UIViewController {
         }
         else if API() == "valid"{
             print("FUNCIONA")
+            // Se va a mover a donde vamos a usar el id de voluntario y el nombre
+            let idVol = defaults.integer(forKey: "idVol")
+            let nombre = defaults.string(forKey: "nombreVol")
+            print("ID: \(idVol)" )
+            print("Nombre: \(nombre ?? "")" )
             // segue
         }
     }
@@ -121,6 +126,7 @@ class LogInVoluntarioViewController: UIViewController {
             return (hashPassword)
     }
     
+    let defaults = UserDefaults.standard
     func API() -> String{
         var searchEmail = "dummy"
         var searchPassword = "dummy"
@@ -153,6 +159,8 @@ class LogInVoluntarioViewController: UIViewController {
                                         print("Contraseña: \(i.Contrasenia)" )
                                         // Agregar segue a la vista de voluntario
                                         apiAnswer = "valid"
+                                        self.defaults.setValue(i.idVol, forKey: "idVol")
+                                        self.defaults.setValue(i.nombre, forKey: "nombreVol")
                                     }
                                 }else{
                                     // Ventana emergente usuario inválido
@@ -166,7 +174,7 @@ class LogInVoluntarioViewController: UIViewController {
                 group.leave()
             }
             task.resume()
-        
+
         group.wait()
         return apiAnswer
     }
