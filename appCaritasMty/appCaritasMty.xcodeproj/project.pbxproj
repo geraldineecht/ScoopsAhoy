@@ -18,6 +18,7 @@
 		1A6E806E28C795D900C195F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E806D28C795D900C195F7 /* Assets.xcassets */; };
 		1A6E807128C795D900C195F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E806F28C795D900C195F7 /* LaunchScreen.storyboard */; };
 		F175E70828DA91B000AC01CB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E70728DA91B000AC01CB /* Model.swift */; };
+		FBD1566228E8C11500830139 /* ProyectosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1566128E8C11500830139 /* ProyectosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1A6E807028C795D900C195F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6E807228C795D900C195F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F175E70728DA91B000AC01CB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FBD1566128E8C11500830139 /* ProyectosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		1A026C5828C8E46900632C31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FBD1566128E8C11500830139 /* ProyectosViewController.swift */,
 				1A6E806828C795D300C195F7 /* ViewController.swift */,
 				1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */,
 				1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */,
@@ -171,6 +174,7 @@
 			files = (
 				1A6E806928C795D300C195F7 /* ViewController.swift in Sources */,
 				1A2B972828C9665C00470ABF /* RegistroVoluntarioViewController.swift in Sources */,
+				FBD1566228E8C11500830139 /* ProyectosViewController.swift in Sources */,
 				1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */,
 				1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */,
 				1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */,
