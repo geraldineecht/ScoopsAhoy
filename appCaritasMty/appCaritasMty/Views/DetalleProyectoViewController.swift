@@ -23,17 +23,38 @@ class DetalleProyectoViewController: UIViewController {
     
     @IBOutlet weak var degradadoImagen: UIView!
     
+    @IBOutlet weak var postularseView: UIView!
+    @IBOutlet weak var imageViewAlimentos: UIView!
+    @IBOutlet weak var postularseV: UIView!
+    
+    
+    @IBOutlet weak var tlHoras: UILabel!
+    @IBOutlet weak var tlFecha: UILabel!
+    
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.bringSubviewToFront(postularseView)
+        
+        imageViewAlimentos.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 15)
+        postularseView.roundCorners(corners: [.bottomLeft, .bottomRight, .topLeft, .topRight], radius: 15)
+        
         degradadoImagen.setTwoGradient(colorOne: UIColor.white.withAlphaComponent(0.1), colorTwo: UIColor(red: 0.56, green: 0.76, blue: 0.62, alpha: 1.00))
         
-        
-        
+        // TITULO TEXTO
+
         textViewTitulo.text = "Organización del Almacén"
+        
         tituloHeight.constant = self.textViewTitulo.contentSize.height
+        
+        // HORAS Y FECHA
+        tlHoras.text = "31 Mayo"
+        tlFecha.text = ""
+        
+        
         
         // DESCRIPCION TEXTO
         
@@ -49,6 +70,8 @@ class DetalleProyectoViewController: UIViewController {
         
         
         // SUBTITULO TEXTO
+        
+        
         textViewSubtitulo.text = "Actividades generales a realizar: "
         textViewHeightSub.constant = self.textViewSubtitulo.contentSize.height
 
