@@ -41,7 +41,7 @@ class ProyectosViewController: UIViewController, UICollectionViewDelegate, UICol
           performSegue(withIdentifier: "showDetail", sender: selectedData)
       }
 
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let selectedItem = sender as? projectList else {
             return
         }
@@ -51,5 +51,5 @@ class ProyectosViewController: UIViewController, UICollectionViewDelegate, UICol
             }
             destinationVC.projectReceived = selectedItem
         }
-    }
+    }*/
 }
