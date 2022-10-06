@@ -17,9 +17,9 @@
 		1A6E806C28C795D300C195F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E806A28C795D300C195F7 /* Main.storyboard */; };
 		1A6E806E28C795D900C195F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E806D28C795D900C195F7 /* Assets.xcassets */; };
 		1A6E807128C795D900C195F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E806F28C795D900C195F7 /* LaunchScreen.storyboard */; };
-		F1330F8228EF0BDD004EA682 /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F8028EF0BDD004EA682 /* gradient.swift */; };
-		F1330F8328EF0BDD004EA682 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F8128EF0BDD004EA682 /* colors.swift */; };
-		F1330F8528EF0C00004EA682 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F8428EF0C00004EA682 /* DetalleProyectoViewController.swift */; };
+		F1330F8D28EF0D21004EA682 /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F8C28EF0D21004EA682 /* gradient.swift */; };
+		F1330F8F28EF0D38004EA682 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F8E28EF0D38004EA682 /* colors.swift */; };
+		F1330F9128EF0D58004EA682 /* DetalleProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1330F9028EF0D58004EA682 /* DetalleProyectoViewController.swift */; };
 		F175E70828DA91B000AC01CB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E70728DA91B000AC01CB /* Model.swift */; };
 		FBD1566228E8C11500830139 /* ProyectosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD1566128E8C11500830139 /* ProyectosViewController.swift */; };
 		FBF878BC28EC78180038A5AA /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF878BB28EC78180038A5AA /* ProjectCollectionViewCell.swift */; };
@@ -39,9 +39,9 @@
 		1A6E806D28C795D900C195F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6E807028C795D900C195F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6E807228C795D900C195F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1330F8028EF0BDD004EA682 /* gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gradient.swift; path = "../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/gradient.swift"; sourceTree = "<group>"; };
-		F1330F8128EF0BDD004EA682 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = colors.swift; path = "../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/colors.swift"; sourceTree = "<group>"; };
-		F1330F8428EF0C00004EA682 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleProyectoViewController.swift; path = "../../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/Views/DetalleProyectoViewController.swift"; sourceTree = "<group>"; };
+		F1330F8C28EF0D21004EA682 /* gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gradient.swift; path = "../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/gradient.swift"; sourceTree = "<group>"; };
+		F1330F8E28EF0D38004EA682 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = colors.swift; path = "../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/colors.swift"; sourceTree = "<group>"; };
+		F1330F9028EF0D58004EA682 /* DetalleProyectoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetalleProyectoViewController.swift; path = "../../../../../../Downloads/ScoopsAhoy-branchGeraldine-2/appCaritasMty/appCaritasMty/Views/DetalleProyectoViewController.swift"; sourceTree = "<group>"; };
 		F175E70728DA91B000AC01CB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FBD1566128E8C11500830139 /* ProyectosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectosViewController.swift; sourceTree = "<group>"; };
 		FBF878BB28EC78180038A5AA /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -62,13 +62,13 @@
 		1A026C5828C8E46900632C31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1330F9028EF0D58004EA682 /* DetalleProyectoViewController.swift */,
 				FBD1566128E8C11500830139 /* ProyectosViewController.swift */,
 				1A6E806828C795D300C195F7 /* ViewController.swift */,
 				1A026C5928C8E49300632C31 /* VoluntarioIngresoViewController.swift */,
 				1A2B972728C9665B00470ABF /* RegistroVoluntarioViewController.swift */,
 				1A02468728D7D10C0045B54B /* LogInVoluntarioViewController.swift */,
 				1A02468928D8B3D70045B54B /* LogInAdministradorViewController.swift */,
-				F1330F8428EF0C00004EA682 /* DetalleProyectoViewController.swift */,
 				FBF878BB28EC78180038A5AA /* ProjectCollectionViewCell.swift */,
 			);
 			path = Views;
@@ -101,8 +101,8 @@
 				1A6E806D28C795D900C195F7 /* Assets.xcassets */,
 				1A6E806F28C795D900C195F7 /* LaunchScreen.storyboard */,
 				1A6E807228C795D900C195F7 /* Info.plist */,
-				F1330F8128EF0BDD004EA682 /* colors.swift */,
-				F1330F8028EF0BDD004EA682 /* gradient.swift */,
+				F1330F8C28EF0D21004EA682 /* gradient.swift */,
+				F1330F8E28EF0D38004EA682 /* colors.swift */,
 			);
 			path = appCaritasMty;
 			sourceTree = "<group>";
@@ -188,19 +188,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF878BC28EC78180038A5AA /* ProjectCollectionViewCell.swift in Sources */,
-				F1330F8528EF0C00004EA682 /* DetalleProyectoViewController.swift in Sources */,
+				F1330F9128EF0D58004EA682 /* DetalleProyectoViewController.swift in Sources */,
 				1A6E806928C795D300C195F7 /* ViewController.swift in Sources */,
 				1A2B972828C9665C00470ABF /* RegistroVoluntarioViewController.swift in Sources */,
 				FBD1566228E8C11500830139 /* ProyectosViewController.swift in Sources */,
 				1A026C5A28C8E49300632C31 /* VoluntarioIngresoViewController.swift in Sources */,
+				F1330F8F28EF0D38004EA682 /* colors.swift in Sources */,
 				1A02468828D7D10C0045B54B /* LogInVoluntarioViewController.swift in Sources */,
 				1A6E806528C795D300C195F7 /* AppDelegate.swift in Sources */,
+				F1330F8D28EF0D21004EA682 /* gradient.swift in Sources */,
 				FBF878BE28EC80510038A5AA /* projectList.swift in Sources */,
 				1A02468A28D8B3D70045B54B /* LogInAdministradorViewController.swift in Sources */,
-				F1330F8328EF0BDD004EA682 /* colors.swift in Sources */,
 				1A6E806728C795D300C195F7 /* SceneDelegate.swift in Sources */,
 				F175E70828DA91B000AC01CB /* Model.swift in Sources */,
-				F1330F8228EF0BDD004EA682 /* gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
