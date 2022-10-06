@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         btnAdmin.layer.cornerRadius = 10
     }
     
+    
 
 }
 
@@ -36,6 +37,7 @@ extension UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
+    
 
 
 }
