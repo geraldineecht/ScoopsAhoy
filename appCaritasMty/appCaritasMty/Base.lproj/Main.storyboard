@@ -1165,7 +1165,7 @@
         <!--Horas-->
         <scene sceneID="h4J-80-O75">
             <objects>
-                <viewController id="Y3C-rg-e19" customClass="ViewController" customModule="caritasBranch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y3C-rg-e19" customClass="ViewController" customModule="appCaritasMty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ks-lB-91F">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
